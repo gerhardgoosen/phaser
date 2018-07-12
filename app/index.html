@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="myPhaserApp" class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My AngularJS/Phaser App</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+
+    <link rel="stylesheet" href="app.css">
+    <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+
+  <!-- phaser js -->
+  <script type="text/javascript" src="bower_components/phaser/build/phaser.min.js"></script>
+
+</head>
+
+<body>
+    <ul class="menu">
+        <li><a href="#!/mygame">My Game</a></li>
+        <li><a href="#!/breakout">Breakout</a></li>
+        <li><a href="#!/tanks">Tanks</a></li>
+        <li><a href="#!/defender">Defender</a></li>
+        <li><a href="#!/invaders">Invaders</a></li>
+    </ul>
+
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+    <div ng-view></div>
+    <div>Angular/Phaser seed app [version <span app-version>]</span></div>
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="app.js"></script>
+
+    <!-- <script src="pages/mygame/mygame.js"></script> -->
+    <script src="pages/breakout/breakout.js"></script>
+    <script src="pages/defender/defender.js"></script>
+    <script src="pages/tanks/tanks.js"></script>
+    <script src="pages/invaders/invaders.js"></script>
+
+    <script src="components/version/version.js"></script>
+    <script src="components/version/version-directive.js"></script>
+    <script src="components/version/interpolate-filter.js"></script>
+
+    <!-- MY GAME
+    <script type="text/javascript" src="pages/mygame/js/boot.js"></script>
+    <script type="text/javascript" src="pages/mygame/js/preload.js"></script>
+    <script type="text/javascript" src="pages/mygame/js/menu.js"></script>
+    <script type="text/javascript" src="pages/mygame/js/the_game.js"></script>
+    <script type="text/javascript" src="pages/mygame/js/gameover.js"></script>-->
+</body>
+
+</html>
